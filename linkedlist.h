@@ -13,18 +13,18 @@ public:
 	bool deleteHead();
 	bool deleteTail();
 	bool remove(int target);
+	bool removeR(int target);
 	bool contains(int key);
 	void printList();
 	int size;
 
 private:
-
 	struct Node {
 		int key;
 		Node *next;
 		Node *prev;
 	};
-
+	bool removeR_h(int target, Node * currentNode);
 	
 	Node *head;
 	Node *tail;

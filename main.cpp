@@ -46,6 +46,17 @@ int main() {
 	myLL->remove(8);
 	myLL->printList();
 	COUT << "     Current size: " << myLL->size << ENDL;
+	myLL->removeR(2);
+	myLL->printList();
+	COUT << "     Current size: " << myLL->size << ENDL;
+	myLL->insert(50);
+	myLL->insert(25);
+	myLL->insert(12);
+	myLL->printList();
+	COUT << "     Current size: " << myLL->size << ENDL;
+	myLL->removeR(25);
+	myLL->printList();
+	COUT << "     Current size: " << myLL->size << ENDL;
 	delete myLL;
 
 	// QUEUE
