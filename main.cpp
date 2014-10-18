@@ -35,6 +35,17 @@ int main() {
 	myLL->insertAfter(5, 2);
 	myLL->printList();
 	COUT << "     Current size: " << myLL->size << ENDL;
+	myLL->remove(3);
+	myLL->remove(4);
+	myLL->remove(5);
+	myLL->printList();
+	COUT << "     Current size: " << myLL->size << ENDL;
+	myLL->remove(1);
+	myLL->printList();
+	COUT << "     Current size: " << myLL->size << ENDL;
+	myLL->remove(8);
+	myLL->printList();
+	COUT << "     Current size: " << myLL->size << ENDL;
 	delete myLL;
 
 	// QUEUE
@@ -47,7 +58,7 @@ int main() {
 		srand(time(nullptr));
 		random = rand() % 10 + 1;
 		myQ->enqueue(random);
-		std::this_thread::sleep_for (std::chrono::seconds(1));
+		// std::this_thread::sleep_for (std::chrono::seconds(1));
 	}
 	COUT << "     Current size: " << myQ->size << ENDL;
 	COUT << "Current queue: " << ENDL;

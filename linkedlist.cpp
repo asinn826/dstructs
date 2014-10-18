@@ -82,6 +82,38 @@ bool LinkedList::deleteTail() {
 	return true;
 }
 
+void LinkedList::remove(int target) {
+	Node *temp = head;
+	if (!temp) return; // empty list
+	while (temp) {
+		if (!temp->next && !temp->prev && temp->key == target) {
+      // one element list
+			delete temp;
+			head = tail = nullptr;
+      size--;
+		} else if (head->key == target && temp->key == target) {
+      // head of linked list
+      head = temp->next;
+      head->prev = nullptr;
+      delete temp;
+      size--;
+    } else if (tail->key == target && temp->key == target) {
+      // tail of linked list
+      tail = temp->prev;
+      tail->next = nullptr;
+      delete temp;
+      size--;
+    } else if (temp->key == target) {
+      // middle of linked list
+      temp->prev->next = temp->next;
+      temp->next->prev = temp->prev;
+      delete temp;
+      size--;
+		}
+    temp = temp->next;
+	}
+}
+
 bool LinkedList::contains(int key) {
 	Node *currentNode = head;
 	while (currentNode->next) {

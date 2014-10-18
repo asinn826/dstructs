@@ -12,6 +12,7 @@ public:
 	bool insertAfter(int target, int key);
 	bool deleteHead();
 	bool deleteTail();
+	void remove(int target);
 	bool contains(int key);
 	void printList();
 	int size;
