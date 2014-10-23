@@ -57,6 +57,12 @@ int main() {
 	myLL->removeR(25);
 	myLL->printList();
 	COUT << "     Current size: " << myLL->size << ENDL;
+	myLL->removeR(12);
+	myLL->printList();
+	COUT << "     Current size: " << myLL->size << ENDL;
+	myLL->removeR(6);
+	myLL->printList();
+	COUT << "     Current size: " << myLL->size << ENDL;
 	delete myLL;
 
 	// QUEUE
@@ -64,12 +70,13 @@ int main() {
 	Queue *myQ = new Queue();
 	COUT << "     Current size: " << myQ->size << ENDL;
 	COUT << "Enqueuing 10 random numbers at a solid rate of 1 number per second..." << ENDL;
+	COUT << "The wait is needed for new rng seeds" << ENDL;
 	for (int i = 0; i < 10; i++) {
 		int random;
 		srand(time(nullptr));
 		random = rand() % 10 + 1;
 		myQ->enqueue(random);
-		// std::this_thread::sleep_for (std::chrono::seconds(1));
+		std::this_thread::sleep_for (std::chrono::seconds(1));
 	}
 	COUT << "     Current size: " << myQ->size << ENDL;
 	COUT << "Current queue: " << ENDL;

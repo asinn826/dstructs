@@ -1,6 +1,5 @@
 #include "./linkedlist.h"
 #include <iostream>
-#include <assert.h>
 #define COUT std::cout
 #define ENDL std::endl
 // Note: when compiling, add "-std=c++11" 
