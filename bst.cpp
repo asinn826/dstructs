@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>  // provides std::setw()
 #include "bst.h"
+#include <stdio.h>
 
 #define COUT std::cout
 #define ENDL std::endl
@@ -16,7 +17,7 @@ BinarySearchTree::BinarySearchTree() :
 
 BinarySearchTree::~BinarySearchTree() {
   if(delete_tree(root_))
-    COUT << "BSi Deleted." << ENDL;
+    COUT << "BST Deleted." << ENDL;
   else COUT << "something went wrong" << ENDL;
 }
 
@@ -37,11 +38,14 @@ BinarySearchTree::Node * BinarySearchTree::find(int key, Node * from) {
   Node * temp = from;
   if (!temp) {
     return temp;
-  } else if (key < temp->key) {
+  }
+  if (key < temp->key) {
     return find(key, from->left);
-  } else if (key > temp->key) {
+  }
+  if (key > temp->key) {
     return find(key, from->right);
-  } else return temp;
+  }
+  return temp;
 }
 
 bool BinarySearchTree::insert(Node *& root, int key) {
@@ -83,24 +87,22 @@ bool BinarySearchTree::delete_node(Node * root, int key) {
 	Node * parent = find_parent(to_delete, key);
   // null node
   if (!to_delete) return false;
+
   // 0 child case, is a leaf
   if (!to_delete->left && !to_delete->right) {
 		// node has a parent, so find if it's left or right, and delete accordingly
 		if (parent) {
- 		 	if (to_delete->key < parent->key) {
+ 		 	if (to_delete == parent->left) {
 				parent->left = nullptr;
 			} else {
 				parent->right = nullptr;
-			}
-			delete to_delete;
-			return true;
+      }
 		} else {
 			// node has no parent - it is root node. delete it, set root_ to null
 			root_ = nullptr;
-			delete root;
-			return true;		
 		}
-
+    delete to_delete;
+    return true;
   }
   return false;
 }
