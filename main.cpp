@@ -1,16 +1,20 @@
 #include "linkedlist.h"
 #include "queue.h"
 #include "stack.h"
+#include "bst.h"
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
 #include <thread>
 #include <chrono>
+#include <stdio.h>
 #define COUT std::cout
 #define ENDL std::endl
+#define CIN std::cin
+#define USAGE "usage: a test-number, where test number is: 1=linkedlist, 2=queue, 3=stack, 4=bst, 100=run all"
 
-int main() {
-	// LINKEDLIST
+// LINKEDLIST
+void run_linked_list() {
 	COUT << "================== LINKEDLIST ==================" << ENDL;
 	LinkedList *myLL = new LinkedList();
 	COUT << "     Current size: " << myLL->size << ENDL;
@@ -64,8 +68,10 @@ int main() {
 	myLL->printList();
 	COUT << "     Current size: " << myLL->size << ENDL;
 	delete myLL;
+}
 
-	// QUEUE
+// QUEUE
+void run_queue() {
 	COUT << "================== QUEUE ==================" << ENDL;
 	Queue *myQ = new Queue();
 	COUT << "     Current size: " << myQ->size << ENDL;
@@ -110,8 +116,11 @@ int main() {
 	myQ->printQueue();
 	COUT << "     Current size: " << myQ->size << ENDL;
 	delete myQ;
+}
+	
 
-	// STACK
+// STACK
+void run_stack() {
 	COUT << "================== STACK ==================" << ENDL;
 	Stack *myStack = new Stack();
 	COUT << "     Current size: " << myStack->size << ENDL;
@@ -129,9 +138,110 @@ int main() {
 	COUT << "Current stack: " << ENDL;
 	myStack->printStack();
 	COUT << "     Current size: " << myStack->size << ENDL;
+}
 
+// BST
+void run_bst() {
+	COUT << "================== BST ==================" << ENDL;
+	BinarySearchTree * myBST = new BinarySearchTree();
+	myBST->insert(myBST->root_, 12);
+	myBST->insert(myBST->root_,5);
+	myBST->insert(myBST->root_,16);
+	myBST->insert(myBST->root_,3);
+	myBST->insert(myBST->root_,14);
+	myBST->print_tree(myBST->root_, 0);
+	if (myBST->contains(myBST->root_, 5)) COUT << "Contains 5!" << ENDL;
 	COUT << ENDL;
+	BinarySearchTree * pretty = new BinarySearchTree();
+	pretty->insert(pretty->root_, 50);
+	pretty->insert(pretty->root_, 25);
+	pretty->insert(pretty->root_, 75);
+	pretty->insert(pretty->root_, 12);
+	pretty->insert(pretty->root_, 35);
+	pretty->insert(pretty->root_, 60);
+	pretty->insert(pretty->root_, 85);
+	pretty->print_tree(pretty->root_, 0);
+	COUT << "Height of tree: " << pretty->height(pretty->root_) << ENDL;
+}
+
+int main(int argc, char* argv[]) {
+	int n;
+	int arr[1000];
+
+	if (argc < 2) {
+		printf("What would you like to test?\n1: LinkedList\n2: Queue\n3: Stack\n4: BST\n100: All\n");
+		CIN >> n;
+	} else if (argc >= 3) {
+		int count = 2;
+		for (int i = 0; i < argc - 2; i++) {
+			arr[i] = strtol(argv[count++], nullptr, 10);
+		}
+		n = strtol(argv[1], nullptr, 10);
+	}	else {
+		n = strtol(argv[1], nullptr, 10);
+		arr[0] = 0;
+	}
+
+	COUT << "~~Hello!~~" << ENDL;
+
+	switch(n) {
+		case 1:
+			if (arr[0]) {
+				LinkedList *myLL = new LinkedList();
+				for(int i = 0; i < argc - 2; i++) {
+					myLL->insert(arr[i]);
+				}
+				myLL->printList();
+				break;
+			}
+			run_linked_list();
+			break;
+		case 2:
+			if (arr[0]) {
+				Queue *myQ = new Queue();
+				for (int i = 0; i < argc - 2; i++) {
+					myQ->enqueue(arr[i]);
+				}
+				myQ->printQueue();
+				break;
+			}
+			run_queue();
+			break;
+		case 3:
+			if (arr[0]) {
+				Stack *myStack = new Stack();
+				for (int i = 0; i < argc - 2; i++) {
+					myStack->push(arr[i]);
+				}
+				myStack->printStack();
+				break;
+			}
+			run_stack();
+			break;
+		case 4:
+			if (arr[0]) {
+				BinarySearchTree *myBST = new BinarySearchTree();
+				for (int i = 0; i < argc - 2; i++) {
+					myBST->insert(myBST->root_, arr[i]);
+				}
+				myBST->print_tree(myBST->root_, 0);
+				break;
+			}
+			run_bst();
+			break;
+		case 100:
+			run_linked_list();
+			run_queue();
+			run_stack();
+			run_bst();
+			break;
+		default:
+			printf("%s\n", USAGE);
+	}
+
+
 	COUT << "~~Goodbye!~~" << ENDL;
+
 
 
 	return 0;
