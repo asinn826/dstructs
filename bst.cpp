@@ -16,7 +16,7 @@ BinarySearchTree::BinarySearchTree() :
 
 BinarySearchTree::~BinarySearchTree() {
   if(delete_tree(root_))
-    COUT << "BST Deleted." << ENDL;
+    COUT << "BSi Deleted." << ENDL;
   else COUT << "something went wrong" << ENDL;
 }
 
@@ -60,13 +60,47 @@ bool BinarySearchTree::contains(Node * root, int key) {
   return root->key == key || contains(root->left, key) || contains(root->right, key);
 }
 
+BinarySearchTree::Node * BinarySearchTree::find_parent(Node * root, int key) {
+	if(!root || root->key == key) {
+		return nullptr;
+	}
+	if (root->left->key == key || root->right->key == key) {
+		return root;
+	} else {
+		if (key < root->key) {
+			return find_parent(root->left, key);	
+		} else {
+			return find_parent(root->right, key);
+		}
+	}
+}
+
 bool BinarySearchTree::delete_node(Node * root, int key) {
+	// CURRENTLY SEGFAULTING, WTF IS THIS SHIT FUCK
   // 3 cases: no children(leaf), 1 child, 2 children
-  // null root
-  if (!root) return false;
+	Node * to_delete = find(key, root);
+	// need to find parent of node first
+	Node * parent = find_parent(to_delete, key);
+  // null node
+  if (!to_delete) return false;
   // 0 child case, is a leaf
-  if (!root->left && !root->right) {
-    return true;
+  if (!to_delete->left && !to_delete->right) {
+		// node has a parent, so find if it's left or right, and delete accordingly
+		if (parent) {
+ 		 	if (to_delete->key < parent->key) {
+				parent->left = nullptr;
+			} else {
+				parent->right = nullptr;
+			}
+			delete to_delete;
+			return true;
+		} else {
+			// node has no parent - it is root node. delete it, set root_ to null
+			root_ = nullptr;
+			delete root;
+			return true;		
+		}
+
   }
   return false;
 }

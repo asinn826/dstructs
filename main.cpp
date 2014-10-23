@@ -161,6 +161,10 @@ void run_bst() {
 	pretty->insert(pretty->root_, 60);
 	pretty->insert(pretty->root_, 85);
 	pretty->print_tree(pretty->root_, 0);
+	pretty->delete_node(pretty->root_, 12);
+	pretty->print_tree(pretty->root_, 0);
+
+	COUT << "Parent of 12: " << pretty->find_parent(pretty->root_, 12)->key << ENDL;
 	COUT << "Height of tree: " << pretty->height(pretty->root_) << ENDL;
 }
 

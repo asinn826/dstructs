@@ -19,6 +19,7 @@ public:
   Node * find(int key, Node * from);
 	bool insert(Node *& root, int key);
 	bool contains(Node * root, int key);
+	Node * find_parent(Node * root, int key);
 	bool delete_node(Node * root, int key);
   int height(Node * root);
   int num_leaves(Node * root);
