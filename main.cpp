@@ -11,7 +11,7 @@
 #define COUT std::cout
 #define ENDL std::endl
 #define CIN std::cin
-#define USAGE "usage: a test-number, where test number is: 1=linkedlist, 2=queue, 3=stack, 4=bst, 100=run all"
+#define USAGE "usage: a test-number, where test number is: \n1=linkedlist, \n2=queue, \n3=stack, \n4=bst, \n100=run all\nor a test-number <args> where <args> is a series of int arguments"
 
 // LINKEDLIST
 void run_linked_list() {

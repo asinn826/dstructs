@@ -40,10 +40,10 @@ BinarySearchTree::Node * BinarySearchTree::find(int key, Node * from) {
     return temp;
   }
   if (key < temp->key) {
-    return find(key, from->left);
+    return find(key, temp->left);
   }
   if (key > temp->key) {
-    return find(key, from->right);
+    return find(key, temp->right);
   }
   return temp;
 }
@@ -79,31 +79,86 @@ BinarySearchTree::Node * BinarySearchTree::find_parent(Node * root, int key) {
 	}
 }
 
+BinarySearchTree::Node *& BinarySearchTree::predecessor() {
+  Node *& pred = root_;
+  pred = pred->left;
+  while(pred->right) {
+    pred = pred->right;
+  }
+  return pred;
+}
+
+BinarySearchTree::Node *& BinarySearchTree::successor() {
+  Node *& suc = root_;
+  suc = suc->right;
+  while(suc->left) {
+    suc = suc->left;
+  }
+  return suc;
+}
+
 bool BinarySearchTree::delete_node(Node * root, int key) {
 	// CURRENTLY SEGFAULTING, WTF IS THIS SHIT FUCK
   // 3 cases: no children(leaf), 1 child, 2 children
 	Node * to_delete = find(key, root);
-	// need to find parent of node first
-	Node * parent = find_parent(to_delete, key);
-  // null node
+	// null node
   if (!to_delete) return false;
-
+  printf("rofl\n");
+  // need to find parent of node first
+  Node * parent = find_parent(to_delete, key);
+  printf("Parent of 12: %d\n", parent->key);
   // 0 child case, is a leaf
   if (!to_delete->left && !to_delete->right) {
 		// node has a parent, so find if it's left or right, and delete accordingly
 		if (parent) {
- 		 	if (to_delete == parent->left) {
+ 		 	if (parent->left == to_delete) {
 				parent->left = nullptr;
 			} else {
 				parent->right = nullptr;
       }
 		} else {
 			// node has no parent - it is root node. delete it, set root_ to null
-			root_ = nullptr;
+      root_ = nullptr;
 		}
     delete to_delete;
     return true;
   }
+
+  // 2 child case
+  if (to_delete->left && to_delete->right) {
+    Node *& pred = predecessor();
+    to_delete->key = pred->key;
+    to_delete = pred;
+    pred = pred->left;
+    delete to_delete;
+    return true;
+  }
+
+  // one child cases: left and right
+  // left child case
+  if (to_delete->left) {
+    if (parent) {
+      parent->left = to_delete->left;
+      delete to_delete;
+      return true;
+    } else {
+      root_ = to_delete->left;
+      delete to_delete;
+      return true;
+    }
+  } else {
+  // right child case
+    if (parent) {
+      parent->right = to_delete->right;
+      delete to_delete;
+      return true;
+    } else {
+      root_ = to_delete->right;
+      delete to_delete;
+      return true;
+    }    
+  }
+
   return false;
 }
 

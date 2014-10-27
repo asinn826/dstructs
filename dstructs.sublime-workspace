@@ -1,0 +1,785 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"to",
+				"to_delete"
+			],
+			[
+				"end",
+				"ENDL"
+			],
+			[
+				"cout",
+				"COUT"
+			],
+			[
+				"height",
+				"height_r"
+			],
+			[
+				"pr",
+				"printQueue"
+			],
+			[
+				"p",
+				"printList"
+			],
+			[
+				"in",
+				"insert"
+			],
+			[
+				"roo",
+				"root"
+			],
+			[
+				"li",
+				"linked_list"
+			],
+			[
+				"prin",
+				"print_tree"
+			],
+			[
+				"B",
+				"BinarySearchTree"
+			],
+			[
+				"en",
+				"ENDL"
+			],
+			[
+				"te",
+				"temp_r"
+			],
+			[
+				"temp",
+				"temp_l"
+			],
+			[
+				"delete",
+				"delete_tree"
+			],
+			[
+				"root",
+				"root_"
+			],
+			[
+				"paren",
+				"parentOfTemp"
+			],
+			[
+				"right",
+				"right"
+			],
+			[
+				"num",
+				"numLeaves"
+			],
+			[
+				"pare",
+				"parentOfTemp"
+			],
+			[
+				"res",
+				"result2"
+			],
+			[
+				"re",
+				"result2"
+			],
+			[
+				"resul",
+				"result1"
+			],
+			[
+				"is",
+				"is_opening"
+			],
+			[
+				"tok",
+				"tokenizer_"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"getSum",
+				"getSummonerPic"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"al",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"summ",
+				"summonerName"
+			],
+			[
+				"getTea",
+				"getTeam1Players"
+			],
+			[
+				"gam",
+				"gameType"
+			],
+			[
+				"mash",
+				"mashObject"
+			],
+			[
+				"ma",
+				"mapId"
+			],
+			[
+				"sum",
+				"summonerId"
+			],
+			[
+				"rank",
+				"rankedStats"
+			],
+			[
+				"ran",
+				"rankedStats"
+			],
+			[
+				"summoner",
+				"summonerObject"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"backgroun",
+				"background-position"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"sumone",
+				"summonerId"
+			],
+			[
+				"summer",
+				"summonerName"
+			],
+			[
+				"respo",
+				"responseObj"
+			],
+			[
+				"my",
+				"myUrlEnd"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"endle",
+				"endlesslyGreet"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "bst.h",
+			"settings":
+			{
+				"buffer_size": 798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 6815,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bst.cpp",
+			"settings":
+			{
+				"buffer_size": 3197,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 177.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Dropbox/Dropbox/sandbox/dstructs"
+	],
+	"file_history":
+	[
+		"/D/Program Files/Temp/modexp.cc",
+		"/D/Dropbox/Dropbox/cs221/labs/lab5/bst.cc",
+		"/D/Dropbox/Dropbox/sandbox/dstructs/queue.cpp",
+		"/D/Dropbox/Dropbox/sandbox/dstructs/linkedlist.h",
+		"/D/Dropbox/Dropbox/sandbox/dstructs/Makefile",
+		"/D/Dropbox/Dropbox/cs221 old/Labs/Lab4/old/bst.cpp",
+		"/D/Dropbox/Dropbox/cs221 old/Labs/Lab5/bst.cpp",
+		"/D/Dropbox/Dropbox/Github/Website/index.html",
+		"/D/Dropbox/Dropbox/sandbox/endian.c",
+		"/D/Program Files/cygwin64/home/Alfred Sin/.ssh/known_hosts",
+		"/D/Program Files/cygwin64/etc/defaults/etc/ssh_config",
+		"/C/Users/Alfred Sin/.ssh/known_hosts",
+		"/C/Users/Alfred Sin/.ssh/github_rsa.pub",
+		"/C/Users/Alfred Sin/.ssh/github_rsa",
+		"/C/Users/Alfred Sin/Desktop/huh.cc",
+		"/D/Dropbox/Dropbox/cs213/notes/companionCh2.txt",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/A5-b.s",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/A5-a.s",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/README.txt",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/copy2.s",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/copy.s",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/copy.c",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/A5-a.c",
+		"/D/Dropbox/Dropbox/cs213/notes/companionCh1.txt",
+		"/D/Dropbox/Dropbox/cs213/notes/c2.4.txt",
+		"/D/Dropbox/Dropbox/cs213/notes/c2.5.txt",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/A5-b.c",
+		"/D/Dropbox/Dropbox/cs213/notes/c2.8.txt",
+		"/D/Dropbox/Dropbox/cs213/notes/c2.7.txt",
+		"/D/Dropbox/Dropbox/cs213/notes/c2.4",
+		"/D/Dropbox/Dropbox/cs213/notes/c2.3.txt",
+		"/D/Dropbox/Dropbox/cs213/notes/c2.2.txt",
+		"/D/Dropbox/Dropbox/comm395/persuasive bs/Waffles vs pancakes.txt",
+		"/D/dropbox/dropbox/cs312/assignments/a3/solver-bfs.hs",
+		"/D/dropbox/dropbox/cs312/assignments/a3/solver.hs",
+		"/D/Dropbox/Dropbox/comm395/informative bs/informativepresentation.txt",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/test.c",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/S8-locals-args.c",
+		"/D/Dropbox/Dropbox/cs213/assignments/a5/code/S8-locals-args.s",
+		"/C/Users/Alfred Sin/Desktop/sizeof.c",
+		"/D/Firefox Downloads/lab-07-2.rkt",
+		"/D/Dropbox/Dropbox/sandbox/acm/G.cpp",
+		"/D/Dropbox/Dropbox/sandbox/acm/G.in",
+		"/D/Dropbox/Dropbox/sandbox/acm/10-4-E.in",
+		"/D/Dropbox/Dropbox/sandbox/acm/10-4-D-even.in",
+		"/D/Dropbox/Dropbox/sandbox/acm/10-4-D-odd.in",
+		"/D/Dropbox/Dropbox/sandbox/acm/10-4-E.cc",
+		"/D/Dropbox/Dropbox/sandbox/acm/10-4-D.cc",
+		"/D/Dropbox/Dropbox/sandbox/acm/10-4-D-even..in",
+		"/D/Dropbox/Dropbox/sandbox/acm/10-4-D-1.in",
+		"/D/Dropbox/Dropbox/sandbox/acm/acmq.cpp",
+		"/C/Users/Alfred Sin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Alfred Sin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/Dropbox/Dropbox/cs312/assignments/a2/assign2.hs",
+		"/D/Dropbox/Dropbox/cs312/Lectures/sept23.txt",
+		"/D/Dropbox/Dropbox/cs221/lectures/fib-again.cc",
+		"/D/Dropbox/Dropbox/cs221/mt1/pq1.cc",
+		"/D/Dropbox/Dropbox/cs221/mt1/pq2.cc",
+		"/C/Users/Alfred Sin/Desktop/ch08.vhd",
+		"/D/Dropbox/Dropbox/comm395/informativepresentation.txt",
+		"/D/UBC/CPSC 110/Notes/class 1112 accumulator work.rkt",
+		"/D/UBC/CPSC 110/Notes/class 1112accstarter1.rkt",
+		"/D/UBC/CPSC 110/Notes/class 1114accstarter3.rkt",
+		"/D/UBC/CPSC 110/Notes/class 1112accstarter2.rkt",
+		"/D/Dropbox/Dropbox/cs312/Lectures/sept18.txt",
+		"/C/Users/Alfred Sin/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Dropbox/Dropbox/comm395/file.txt",
+		"/C/Users/Alfred Sin/Desktop/len.cc",
+		"/C/Users/Alfred Sin/Desktop/test.cc",
+		"/D/Dropbox/Dropbox/cs312/assignments/a1/assign1.hs",
+		"/C/Users/Alfred Sin/Desktop/testola.c",
+		"/D/Dropbox/Dropbox/cs312/assign1.hs",
+		"/D/Program Files/Temp/CDate.cc",
+		"/D/Program Files/Temp/heapsort.c",
+		"/D/Dropbox/Dropbox/comm436/Lectures/spt17.txt",
+		"/D/Dropbox/Dropbox/comm436/Lectures/spt15.txt",
+		"/D/Dropbox/Dropbox/comm436/Lectures/spt08.txt",
+		"/D/Dropbox/Dropbox/cs221/projects/pp1-milestone/racket_bracket_stack/token_test.cc",
+		"/D/Dropbox/Dropbox/cs213/assignments/a2/test.s",
+		"/D/Dropbox/Dropbox/cs312/Lectures/sept16.txt",
+		"/D/Dropbox/Dropbox/cs312/Lectures/sept11.txt",
+		"/D/Dropbox/Dropbox/cs213/assignments/a2/code/Exercises/a2_1.c",
+		"/D/Dropbox/Dropbox/cs213/assignments/a2/code/Exercises/a2_2.c",
+		"/D/Dropbox/Dropbox/cs312/assignments/assign1.hs",
+		"/D/Dropbox/Dropbox/cs213/assignments/a2/README.txt",
+		"/D/Dropbox/Dropbox/cs213/assignments/a2/code/Snippets/S1-global-static.s",
+		"/D/Dropbox/Dropbox/cs213/assignments/a2/code/Snippets/S2-global-dyn-array.s",
+		"/D/Dropbox/Dropbox/cs213/assignments/a2/code/Examples/a2_ex1.s",
+		"/C/Users/Alfred Sin/Desktop/testass",
+		"/C/Users/Alfred Sin/Desktop/anothertes.c",
+		"/D/Dropbox/Dropbox/cs221 old/Labs/Lab2/old/insertion.cpp",
+		"/D/Dropbox/Dropbox/cs221 old/Labs/Lab2/old/insertion.h",
+		"/D/Program Files/Temp/insertion.cc",
+		"/C/Users/Alfred Sin/Desktop/oload.c",
+		"/D/Program Files/Temp/pointers.cc",
+		"/D/Program Files/Temp/insertion-2.cc",
+		"/D/Program Files/Temp/bonus.cc",
+		"/C/Users/Alfred Sin/Desktop/test.c",
+		"/C/Users/Alfred Sin/Desktop/a1buggy.cc",
+		"/C/Users/Alfred Sin/Desktop/a1.cc",
+		"/D/Dropbox/Dropbox/cs221/projects/pp1/racket_bracket_stack/racket_tokenizer.cc",
+		"/D/Dropbox/Dropbox/cs221/projects/pp1/racket_bracket_stack/balance_checker.h",
+		"/D/Dropbox/Dropbox/cs221/projects/pp1/racket_bracket_stack/README.txt",
+		"/D/Dropbox/Dropbox/cs221/projects/pp1/racket_bracket_stack/balance_checker.cc",
+		"/D/Dropbox/Dropbox/Website/index.html",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/js/RiotSummonerIdSummerSampleData.json",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/js/riotRecentGameResponse.json",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/js/summonerinfo.js",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/css/custom.css",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/index.php",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/searchResults.php",
+		"/D/Program Files/Temp/fib.cc",
+		"/D/Program Files/Temp/stacksmash.cpp",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/summoner.php",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/searchResults.html",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/index.html",
+		"/C/Users/Alfred Sin/Desktop/test.php",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/css/bootstrap.css",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/graphtest.html",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/Joon/summoner.php",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/indexJoon.html",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/Joon/index.php",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Backend/summonerSearch.php",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/workingMashApeexample.html",
+		"/D/Dropbox/Dropbox/Github/ELORyze/Website/js/currentgameinfo2.js",
+		"/D/Dropbox/Dropbox/sandbox/linkedlist/linkedlist.h",
+		"/D/Program Files/Temp/codeSamples.C",
+		"/D/Program Files/Temp/qsortCount-1.cpp"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"from",
+			"myQ",
+			"Queue",
+			"myQ",
+			"Queue",
+			"printTree",
+			"std::cout",
+			".",
+			"temp",
+			"root_",
+			"BST",
+			"bst",
+			"stack",
+			"queue",
+			"linked_list",
+			"QUEUE",
+			"root_",
+			"printTree",
+			"r",
+			"_root",
+			"root",
+			"remove",
+			"LinkedList",
+			"AS_LINKEDLIST_H",
+			"unit.printResults();",
+			"in_order",
+			"find_parent",
+			"GRDKFBwx6VBwuIgZBdUDRFbbhGhwrTYvREwvQ5s3RnyQE7rZp2F63aSOAbFZyfCQeF5O",
+			"2.6 - ",
+			"b",
+			"x",
+			"main",
+			"helper",
+			"a",
+			",",
+			"myordered",
+			"front_",
+			"head",
+			"arr",
+			"->",
+			"T",
+			"|  ",
+			"|  |",
+			"myType",
+			"Collection",
+			"collection",
+			"Type",
+			"name",
+			"size",
+			"0",
+			"1",
+			"b",
+			"a",
+			"30",
+			"25",
+			"8",
+			"102",
+			"i",
+			"getSummonerRankedStats2",
+			"9",
+			"8",
+			"12",
+			"getSummonerRankedStats",
+			"i",
+			"{\n",
+			"i",
+			"12",
+			"8",
+			"5",
+			"4",
+			"PieChart",
+			"footer",
+			"form-control",
+			"playerStatSummaries",
+			"7",
+			"test10",
+			"test11",
+			"test10",
+			"*y",
+			"x",
+			"2",
+			"getTeam2Player1",
+			"p",
+			"responseObj",
+			"1",
+			"ul",
+			"responseObj",
+			"div",
+			"i",
+			"ul",
+			"responseObj.game.gameMode",
+			"getMapType",
+			"getGameType",
+			"cont",
+			"mashObject.game.mapId",
+			"responseObj",
+			"responseObj.game.gameType",
+			"mashObject.game.mapId",
+			"False",
+			"True",
+			"maptype",
+			"'",
+			"responseObj",
+			"retrieveInfo",
+			"APIlink",
+			"apiLink",
+			"callback",
+			"summonerObject",
+			"rankedStats",
+			"RankedStats",
+			"rankedStats",
+			"RankedStats",
+			"rankedStats",
+			"normalsStats",
+			"responseObj",
+			"Ú",
+			"Ù",
+			"input-lg",
+			"33px",
+			"input-large",
+			"Ranked",
+			"\"https://na.api.pvp.net/api/lol/na/v1.3/stats/by-summoner/\" + summonerId + \"/summary?season=SEASON4&api_key=\"+ apiKey;",
+			"h3",
+			"();\n",
+			"h3",
+			"4",
+			"5",
+			"4"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"false",
+			"true",
+			"\"",
+			"myUrl"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "bst.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								716,
+								716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "bst.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								672,
+								672
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.484375,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "dstructs.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Dropbox\\Dropbox\\sandbox\\dstructs\\dstructs.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 158.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
